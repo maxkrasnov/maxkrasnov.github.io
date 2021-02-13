@@ -1,0 +1,4 @@
+{% assign posts = site.posts | where:"path",trans_path %}
+{% for post in posts %}
+<div><a href="{{post.url|absolute_url}}">{{ post.title }}</a></div>
+{% endfor %}

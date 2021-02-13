@@ -6,4 +6,4 @@ languages:
   - language: 'en'
     links:
       - title: 'CV'
-        url: '/cv'
+        url: '/en/cv'
