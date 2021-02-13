@@ -1,4 +1,4 @@
-{% assign posts = site.posts | where:"path",page.lang %}
+{% assign posts = site.posts %}
 {% for post in posts %}
-<div><a href="{{post.url|absolute_url}}">{{ post.title }}</a></div>
+<div>{{post.path}}<a href="{{post.url|absolute_url}}">{{ post.title }}</a></div>
 {% endfor %}
