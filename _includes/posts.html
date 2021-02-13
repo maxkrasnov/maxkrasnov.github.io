@@ -1,10 +1,4 @@
-{% for block in site.data.map %}
-{% for item in block[page.lang] %}
-{% if item == page.path %}
-{% for trans in block %}
-{% assign trans_path = trans[1] %}
-
-{% assign posts = site.posts | where:"path",trans_path %}
+{% assign posts = site.posts | where:"path",page.lang %}
 {% for post in posts %}
 <div><a href="{{post.url|absolute_url}}">{{ post.title }}</a></div>
 {% endfor %}
