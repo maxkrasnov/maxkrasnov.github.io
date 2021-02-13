@@ -1,4 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
+@font-face {
+  font-family: 'WoopWoooop';
+  src: url('/assets/fonts/WoopWoooop.eot');
+  url('/assets/fonts/WoopWoooop.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/WoopWoooop.woff2') format('woff2'),
+  url('/assets/fonts/WoopWoooop.woff') format('woff'),
+  url('/assets/fonts/WoopWoooop.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WoopWoooop';
+  src: url('/assets/fonts/WoopWoooop-Bold.eot');
+  url('/assets/fonts/WoopWoooop-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/WoopWoooop-Bold.woff2') format('woff2'),
+  url('/assets/fonts/WoopWoooop-Bold.woff') format('woff'),
+  url('/assets/fonts/WoopWoooop-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 h1 {
   size: 42px;
