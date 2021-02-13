@@ -1,6 +1,6 @@
 ---
 layout: default
-lang: ru-RU
+lang: ru
 title: Тестовая страница
 description: Описание тестовой страницы
 ---

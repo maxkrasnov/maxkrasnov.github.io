@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <title>{% if page.title %}{{ page.title | escape }}{% else %}}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <meta property="og:title" content="{% t site.og.title %}"/>
+    <meta property="og:image" content="{% t site.og.image %}"/>
+    <meta property="og:description" content="{% t site.og.description %}"/>
+    <meta property="og:url" content="{{ site.baseurl }}{% if page.url %}{{ page.url }}{% endif %}"/>
+    <meta property="og:locale" content="{% t site.og.locale %}"/>
 </head>
 <body>
     {{ content }}
+    <footer>
+        <a class="active" href="#">{{ site.languageNames[site.lang] }}</a>
+        {% for lang in site.languageNames %}
+        {% if lang[0] == site.lang %} {% continue %} {% endif %}
+        {% if page.namespace %}
+        <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
+        {% else %}
+        <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+        {% endif %}
+        {% endfor %}
+    </footer>
+    <script>
+        let lang = navigator.language;
+        if (lang.indexOf('ru') === -1) {
+            window.location = '/en/';
+        }
+    </script>
 </body>
 </html>

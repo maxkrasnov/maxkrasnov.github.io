@@ -1,0 +1,8 @@
+encoding: utf-8
+permalink: pretty
+highlighter: rouge
+sass:
+  style: compressed
+languages: ['ru', 'en']
+exclude_from_localizations: ["assets", "CNAME"]
+defaultLang: ru
