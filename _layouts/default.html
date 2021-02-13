@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <title>{% if page.title %}{{ page.title | escape }}{% else %}}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-    <meta property="og:title" content="{% t site.og.title %}"/>
-    <meta property="og:image" content="{% t site.og.image %}"/>
-    <meta property="og:description" content="{% t site.og.description %}"/>
-    <meta property="og:url" content="{{ site.baseurl }}{% if page.url %}{{ page.url }}{% endif %}"/>
-    <meta property="og:locale" content="{% t site.og.locale %}"/>
 </head>
 <body>
     {{ content }}
