@@ -6,7 +6,7 @@
     <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 </head>
 <body>
-    <header>
+    <header class="header">
         <menu>
             {% for item in site.data.navigation.languages %}
                 {% if item.language == page.lang %}
