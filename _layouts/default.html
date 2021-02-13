@@ -9,24 +9,24 @@
     <header>
         <menu>
             {% for item in site.data.navigation.languages %}
-            {% if item.language == page.lang %}
-            {% for link in item.links %}
-            {% if link.url contains "http" %}
-            {% assign url = link.url %}
-            {% else %}
-            {% assign url = link.url | relative_url %}
-            {% endif %}
-            <a class="page-link" href="{{ url }}">{{ link.title }}</a>
-            {% endfor %}
-            {% endif %}
+                {% if item.language == page.lang %}
+                    {% for link in item.links %}
+                        {% if link.url contains "http" %}
+                            {% assign url = link.url %}
+                        {% else %}
+                            {% assign url = link.url | relative_url %}
+                        {% endif %}
+                        <a class="page-link" href="{{ url }}">{{ link.title }}</a>
+                    {% endfor %}
+                {% endif %}
             {% endfor %}
         </menu>
-        <h1>{{ page.title }}</h1>
-        {% if page.subtitle %}
-        <h2>{{ page.subtitle }}</h2>
-        {% endif %}
     </header>
     <main class="content">
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}
+            <h2>{{ page.subtitle }}</h2>
+        {% endif %}
         {{ content }}
     </main>
 </body>

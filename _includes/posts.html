@@ -1,8 +1,13 @@
 {% assign posts = site.posts | where:"lang", page.lang %}
 
+<div class="b-posts">
 {% for post in posts %}
-<a href="{{post.url|absolute_url}}">
-    <div>{{ post.title }}</div>
-    <div>{{ post.description }}</div>
+<a class="b-post" href="{{post.url|absolute_url}}">
+    <div class="b-post__title">{{ post.title }}</div>
+    <div class="b-post__props">
+        <div class="b-post__props-date">{{ post.date }}</div>
+    </div>
+    <div class="b-post__description">{{ post.description }}</div>
 </a>
 {% endfor %}
+</div>
