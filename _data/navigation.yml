@@ -1,0 +1,13 @@
+languages:
+  - language: 'ru'
+    links:
+      - title: 'Резюме'
+        url: '/hh'
+      - title: 'Работы'
+        url: '/works'
+  - language: 'en'
+    links:
+      - title: 'CV'
+        url: '/hh'
+      - title: 'Works'
+        url: '/works'
