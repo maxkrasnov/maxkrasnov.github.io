@@ -13,7 +13,20 @@ html {
   margin: auto;
 }
 
-h1 {
-  size: 42px;
-  line-height: 42px;
+.b-post {
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 40px;
+  display: block;
+  &__title {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  &__props {
+    display: none;
+  }
+  &__description {
+    font-weight: 300;
+  }
 }
