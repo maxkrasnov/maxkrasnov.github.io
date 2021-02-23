@@ -1,32 +1,19 @@
 @font-face {
-  font-family: 'Source Code Pro';
-  src: local('Source Code Pro ExtraLight'),
-  local('SourceCodePro-ExtraLight'),
-  url('/assets/fonts/Sourcecodeproextralight.woff2') format('woff2'),
-  url('/assets/fonts/Sourcecodeproextralight.woff') format('woff'),
-  url('/assets/fonts/Sourcecodeproextralight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Source Code Pro';
-  src: local('Source Code Pro'),
-  local('SourceCodePro-Regular'),
-  url('/assets/fonts/Sourcecodepro.woff2') format('woff2'),
-  url('/assets/fonts/Sourcecodepro.woff') format('woff'),
-  url('/assets/fonts/Sourcecodepro.ttf') format('truetype');
+  font-family: 'InputMono';
+  src: url('/assets/fonts/InputMono-Regular.eot');
+  src: local('☺'), url('/assets/fonts/InputMono-Regular.woff') format('woff'),
+  url('/assets/fonts/InputMono-Regular.ttf') format('truetype'),
+  url('/assets/fonts/InputMono-Regular.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
-  src: local('Source Code Pro Black'),
-  local('SourceCodePro-Black'),
-  url('/assets/fonts/Sourcecodeproblack.woff2') format('woff2'),
-  url('/assets/fonts/Sourcecodeproblack.woff') format('woff'),
-  url('/assets/fonts/Sourcecodeproblack.ttf') format('truetype');
+  font-family: 'InputMono';
+  src: url('/assets/fonts/InputMono-Black.eot');
+  src: local('☺'), url('/assets/fonts/InputMono-Black.woff') format('woff'),
+  url('/assets/fonts/InputMono-Black.ttf') format('truetype'),
+  url('/assets/fonts/InputMono-Black.svg') format('svg');
   font-weight: bold;
   font-style: normal;
 }
