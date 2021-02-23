@@ -1,4 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+@font-face {
+  font-family: 'Source Code Pro';
+  src: local('Source Code Pro ExtraLight'),
+  local('SourceCodePro-ExtraLight'),
+  url('/assets/fonts/Sourcecodeproextralight.woff2') format('woff2'),
+  url('/assets/fonts/Sourcecodeproextralight.woff') format('woff'),
+  url('/assets/fonts/Sourcecodeproextralight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: local('Source Code Pro'),
+  local('SourceCodePro-Regular'),
+  url('/assets/fonts/Sourcecodepro.woff2') format('woff2'),
+  url('/assets/fonts/Sourcecodepro.woff') format('woff'),
+  url('/assets/fonts/Sourcecodepro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: local('Source Code Pro Black'),
+  local('SourceCodePro-Black'),
+  url('/assets/fonts/Sourcecodeproblack.woff2') format('woff2'),
+  url('/assets/fonts/Sourcecodeproblack.woff') format('woff'),
+  url('/assets/fonts/Sourcecodeproblack.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 
 h1 {
   size: 42px;
