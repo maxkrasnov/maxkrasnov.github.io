@@ -20,6 +20,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CircularStd-Book';
+  src: url('/assets/fonts/CircularStd-Book.eot');
+  src: url('/assets/fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/CircularStd-Book.woff') format('woff'),
+  url('/assets/fonts/CircularStd-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 h1 {
   size: 42px;
