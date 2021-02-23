@@ -3,7 +3,14 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'InputMono', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #a0b3c6;
+  letter-spacing: .1px;
+  line-height: 28px;
+  font-feature-settings: "liga","kern";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 .content {
