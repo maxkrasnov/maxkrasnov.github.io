@@ -1,13 +1,22 @@
 {% assign posts = site.posts | where:"lang", page.lang %}
 
-<div class="b-posts">
+<div class="posts">
 {% for post in posts %}
-<a class="b-post" href="{{post.url|absolute_url}}">
-    <div class="b-post__title">{{ post.title }}</div>
-    <div class="b-post__props">
-        <div class="b-post__props-date">{{ post.date | date: "%d.%m.%Y"}}</div>
+<a class="post" href="{{post.url|absolute_url}}">
+    <div class="post__header">
+        <div class="post__title">{{ post.title }}</div>
+        <div class="post__props">
+            <div class="post__tag label">
+                <svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.863 477.863" style="enable-background:new 0 0 477.863 477.863;" xml:space="preserve"> <g> <g> <path d="M460.796,0H273.063c-4.526,0.001-8.866,1.8-12.066,5.001l-256,256c-6.663,6.665-6.663,17.468,0,24.132L192.73,472.866 c6.665,6.662,17.468,6.662,24.132,0l256-256c3.201-3.2,5-7.54,5.001-12.066V17.067C477.863,7.641,470.222,0,460.796,0z M443.73,197.734L204.796,436.668L41.195,273.067L280.129,34.133H443.73V197.734z"/> </g> </g> <g> <g> <path d="M358.396,68.267c-28.277,0-51.2,22.923-51.2,51.2s22.923,51.2,51.2,51.2s51.2-22.923,51.2-51.2 S386.673,68.267,358.396,68.267z M358.396,136.533c-9.426,0-17.067-7.641-17.067-17.067s7.641-17.067,17.067-17.067 s17.067,7.641,17.067,17.067S367.822,136.533,358.396,136.533z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                {{ post.tag }}
+            </div>
+            <div class="post__date label">
+                <svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M474.988,49.349H37.012c-17.007,0-30.843,13.836-30.843,30.843v400.964C6.169,498.164,20.005,512,37.012,512h437.976 c17.007,0,30.843-13.836,30.843-30.843V80.193C505.831,63.186,491.995,49.349,474.988,49.349z M468.819,474.988H43.181V86.361 h425.639V474.988z"/> </g> </g> <g> <g> <rect x="24.675" y="172.723" width="462.651" height="37.012"/> </g> </g> <g> <g> <path d="M135.711,0c-10.221,0-18.506,8.285-18.506,18.506v98.699c0,10.221,8.285,18.506,18.506,18.506s18.506-8.285,18.506-18.506 V18.506C154.217,8.285,145.932,0,135.711,0z"/> </g> </g> <g> <g> <path d="M382.458,0c-10.221,0-18.506,8.285-18.506,18.506v98.699c0,10.221,8.285,18.506,18.506,18.506s18.506-8.285,18.506-18.506 V18.506C400.964,8.285,392.679,0,382.458,0z"/> </g> </g> <g> <g> <path d="M326.94,370.12H191.229c-10.221,0-18.506,8.285-18.506,18.506c0,10.221,8.285,18.506,18.506,18.506H326.94 c10.221,0,18.506-8.285,18.506-18.506C345.446,378.405,337.161,370.12,326.94,370.12z"/> </g> </g> <g> <g> <path d="M326.94,283.759H191.229c-10.221,0-18.506,8.285-18.506,18.506s8.285,18.506,18.506,18.506H326.94 c10.221,0,18.506-8.284,18.506-18.506S337.161,283.759,326.94,283.759z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                {{ post.date | date: "%d.%m.%Y"}}
+            </div>
+        </div>
     </div>
-    <div class="b-post__description">{{ post.description }}</div>
+    <div class="post__description">{{ post.description }}</div>
 </a>
 {% endfor %}
 </div>

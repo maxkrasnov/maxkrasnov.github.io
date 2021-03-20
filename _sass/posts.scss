@@ -1,0 +1,31 @@
+@import "variables";
+
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  position: relative;
+  padding-bottom: 18px;
+  color: $primary !important;
+  &__title {
+    font-weight: bold;
+    color: #0366d6;
+    margin-right: 8px;
+  }
+  &__description {
+    font-style: italic;
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+  }
+  &__props {
+    display: flex;
+    flex-direction: row;
+    & > div {
+      margin-right: 8px;
+    }
+  }
+}

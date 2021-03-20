@@ -7,28 +7,49 @@
     <link rel="stylesheet" href="{{ '/assets/styles/main.css' | relative_url }}" />
 </head>
 <body>
-    <header class="header">
-        <menu>
-            {% for item in site.data.navigation.languages %}
-                {% if item.language == page.lang %}
-                    {% for link in item.links %}
-                        {% if link.url contains "http" %}
-                            {% assign url = link.url %}
-                        {% else %}
-                            {% assign url = link.url | relative_url %}
-                        {% endif %}
-                        <a class="page-link" href="{{ url }}">{{ link.title }}</a>
+    <div class="content">
+        <header class="content__header header">
+            <a href="/{% if page.lang == 'en' %}en{% endif %}" class="header__logo logo">
+                <div class="logo__image">
+                    <img src="https://avatars.githubusercontent.com/u/12941997?s=460&u=4ec37709c7c4623e5ab2d1cf43d7c3ae5231a3bd&v=4"/>
+                </div>
+                <div class="logo__content">
+                    {% for item in site.data.navigation.languages %}
+                    {% if item.language == page.lang %}
+                    <div class="logo__content-name">{{ item.name }}</div>
+                    <div class="logo__content-description">{{ item.description }}</div>
+                    {% endif %}
                     {% endfor %}
+                </div>
+            </a>
+            <div class="header__menu menu">
+                {% for item in site.data.navigation.languages %}
+                {% if item.language == page.lang %}
+                {% for link in item.links %}
+                {% if link.url contains "http" %}
+                {% assign url = link.url %}
+                {% else %}
+                {% assign url = link.url | relative_url %}
                 {% endif %}
-            {% endfor %}
-        </menu>
-    </header>
-    <main class="content">
-        <h1>{{ page.title }}</h1>
-        {% if page.subtitle %}
+                <a
+                        {% if link.blank %}
+                        target="_blank"
+                        {% endif %}
+                        class="menu__item"
+                        href="{{ url }}"
+                >{{ link.svg }} {{ link.title }}</a>
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+            </div>
+        </header>
+        <main class="content__container">
+            <h1>{{ page.title }}</h1>
+            {% if page.subtitle %}
             <h2>{{ page.subtitle }}</h2>
-        {% endif %}
-        {{ content }}
-    </main>
+            {% endif %}
+            {{ content }}
+        </main>
+    </div>
 </body>
 </html>
