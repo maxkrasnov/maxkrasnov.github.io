@@ -1,4 +1,5 @@
 ---
-redirect_to: "/2021/02/13/hello-world/"
+redirect_to: "/blog/2018/09/21/bitrix-file-structure/"
 ---
 {%comment%} Чтобы сохранить старые ссылки {%endcomment%}
+
