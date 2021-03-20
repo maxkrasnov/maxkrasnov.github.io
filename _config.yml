@@ -9,6 +9,9 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 
+url: https://maxkrasnov.ru
+enforce_ssl: maxkrasnov.ru
+
 sass:
   style: compressed
 languages: ['ru', 'en']
