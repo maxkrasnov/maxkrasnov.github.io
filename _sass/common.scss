@@ -36,6 +36,7 @@ a {
   max-width: 1012px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 12px;
   &__container {
     font-size: 16px;
   }
@@ -48,7 +49,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 16px 0;
 }
@@ -84,7 +85,7 @@ a {
 .menu {
   &__item {
     display: inline-flex;
-    padding: 8px 16px;
+    padding: 8px 4px;
     font-size: 14px;
     line-height: 30px;
     text-align: center;
@@ -94,6 +95,9 @@ a {
     border-bottom: 2px solid transparent;
     align-items: center;
     color: $primary !important;
+    @media (min-width: 992px) {
+      padding: 8px 16px;
+    }
     svg {
       margin-right: 6px;
       color: #959da5;
@@ -124,5 +128,11 @@ a {
     rect, path {
       fill: #6a737d;
     }
+  }
+}
+
+h1 {
+  @media (max-width: 991px) {
+    font-size: 24px;
   }
 }
