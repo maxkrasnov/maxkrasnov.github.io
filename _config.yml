@@ -1,6 +1,14 @@
 encoding: utf-8
 permalink: pretty
+
+markdown: kramdown
 highlighter: rouge
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
 sass:
   style: compressed
 languages: ['ru', 'en']
