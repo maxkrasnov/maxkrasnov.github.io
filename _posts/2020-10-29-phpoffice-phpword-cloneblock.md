@@ -1,5 +1,5 @@
 ---
-title: "Неработающий cloneBlock в больших документах при использовании библиотеки PHPOffice\PHPWord"
+title: "Неработающий cloneBlock на больших документах в PHPWord"
 description: При редактировании doc(x) шаблона используя библиоткеу PHPOffice\PHPWord, возникают проблемы при использовании конструкции cloneBlock в больших документах.
 category: blog
 tag: "PHP/PHPOffice\PHPWord"
