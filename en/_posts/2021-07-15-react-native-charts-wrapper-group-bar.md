@@ -22,5 +22,5 @@ config: {
 The labels under the grouped columns to be centered, you need to calculate the parameters above based on the formula:
 
 ```
-(barSpace + barWidth) * countInGroup + groupSpace = 1
+(barSpace + barWidth) * 'count in group' + groupSpace = 1
 ```
