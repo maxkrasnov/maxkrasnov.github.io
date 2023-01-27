@@ -73,7 +73,7 @@
         </main>
     </div>
     <footer>
-        &copy; {{ 'now' | date: "%Y" }},
+        &copy; {{ site.time | date: "%Y" }},
         {% for item in site.data.navigation.languages %}
         {% if item.language == page.lang %}
             {{ item.name }}
